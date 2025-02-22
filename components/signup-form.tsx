@@ -22,13 +22,16 @@ export function SignupForm() {
     const formData = { name, email, role, linkedin };
 
     try {
-      const response = await fetch("http://localhost:8080/beta-access", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
+      const response = await fetch(
+        "https://beta-access-hirrd-ai-2.onrender.com/beta-access",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
 
       const data = await response.json();
 
