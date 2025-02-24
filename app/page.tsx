@@ -100,7 +100,7 @@ export default function Home() {
         <Hero />
         <ForCompanies />
         <ForCandidates />
-        <LiveAIDemo />
+        {/* <LiveAIDemo /> */}
         <TabSection />
         <SignupForm />
         <CTASection />
